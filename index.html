@@ -6,25 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="/node_modules/bootstrap/dist/css/bootstrap.css"></script>
+    <script src="./node_modules/bootstrap/dist/css/bootstrap.css"></script>
+    <!-- <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
 </head>
 
 
 <body id="body">
+    <!-- Sets the game container -->
     <div id="gameContainer">
-        <h1>Tic Tac Toe</h1>
+        <br>
+        <br>
+        <!-- header with bootstrap component for text color -->
+        <h1 class="text-secondary">Tic Tac Toe</h1>
+        <br>
+        <br>
+        <!-- This is the game play board -->
         <div id="cellContainer">
-            <div cellIndex="0" class="cell"></div>
-            <div cellIndex="1" class="cell"></div>
-            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="0" class="cell border-bottom"></div>
+            <div cellIndex="1" class="cell border-bottom border-start border-end"></div>
+            <div cellIndex="2" class="cell border-bottom"></div>
             <div cellIndex="3" class="cell"></div>
-            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="4" class="cell border-start border-end"></div>
             <div cellIndex="5" class="cell"></div>
-            <div cellIndex="6" class="cell"></div>
-            <div cellIndex="7" class="cell"></div>
-            <div cellIndex="8" class="cell"></div>
+            <div cellIndex="6" class="cell border-top"></div>
+            <div cellIndex="7" class="cell border-top border-start border-end"></div>
+            <div cellIndex="8" class="cell border-top"></div>
         </div>
-        <h2 id="infoText"></h2>
+        <br>
+        <br>
+        <!-- This will display which player's turn it is.  Bootstrap text color -->
+        <h2 id="infoText" class="text-secondary"></h2>
+        <br>
+        <!-- This is the button to restart the game.  Bootstrap used to style button -->
         <button type="button" class="btn btn-outline-dark" id="restartBtn">Restart Game</button>
     </div>
 
