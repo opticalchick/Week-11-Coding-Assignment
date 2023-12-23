@@ -1,8 +1,6 @@
 @import '/node_modules/bootstrap/dist/css/bootstrap.css';
 
-
-/* sets size for game board along with pointer for cell click */
-
+/* sets size for each cell int he game board along with pointer for cell click */
 .cell {
     width: 100px;
     height: 100px;
@@ -21,7 +19,7 @@
     text-align: center;
 }
 
-/* this sets the layout of the game play board as a grid with 3 columns */
+/* sets the number and size of columns  */
 #cellContainer {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -29,7 +27,7 @@
     margin: auto;
 }
 
-/* sets the border color for game board */
+/* sets the border color for the cells of game board */
 .cell.border {
     border: solid 6px purple !important;
 }
